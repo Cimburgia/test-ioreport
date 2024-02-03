@@ -99,7 +99,7 @@ int main(int argc, char* argv[])
             NSString* channel_name = IOReportChannelGetChannelName(ch);
             uint8_t report_format = IOReportChannelGetFormat(ch);
             NSString* label = IOReportChannelGetUnitLabel(ch);
-            if ([group isEqual:@"Energy Model"]){
+            if ([group isEqual:@"CPU Stats"]){
                 switch (report_format) {
                 case kIOReportFormatSimple: {
                     uint32_t value = IOReportSimpleGetIntegerValue(ch, 0);
